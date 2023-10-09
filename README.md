@@ -107,5 +107,5 @@ Xarray should install numpy by default, but check that numpy is there.
 ```
 jupyter notebook
 ```
-
+This will launch a new tab in your browser. 
 
