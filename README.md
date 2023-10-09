@@ -3,8 +3,8 @@ Repository for EV333 Atmospheric Dynamics at Colorado College
 
 # Getting Started
 
-# [Instructions for Installing Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
-## macOS (M1)
+# 1. [Install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
+## macOS (M1 chip)
 1. Run the following four commands in a terminal:
 ```
 mkdir -p ~/miniconda3
@@ -16,14 +16,34 @@ rm -rf ~/miniconda3/miniconda.sh
 ```
 ~/miniconda3/bin/conda init zsh
 ```
-3. Close and relaunch the terminal 
+3. Close and relaunch the terminal
 
-4. To check which version of Python you have: (should be Python 3.11.6)
+5. To check which version of Python you have installed: 
 ```
 python --version
 ```
+You should have Python 3.11.
 
-## Creating a new Python environment
+## Windows
+1. Run the following four commands in a terminal:
+```
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe
+start /wait "" miniconda.exe /S
+del miniconda.exe
+```
+2. Initialize the zsh shell:
+```
+~/miniconda3/bin/conda init zsh
+```
+3. Close and relaunch the terminal
+
+5. To check which version of Python you have installed: 
+```
+python --version
+```
+You should have Python 3.11.
+
+# 2. Create a new Python environment
 [Additional documentation for creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
 1. Open the terminal.
 2. To create an environment called Atmo_EV333 for this course:
@@ -36,7 +56,7 @@ proceed ([y]/n)?
 ```
 This creates the Atmo_EV333 environment. 
 
-## Activating your Python environment
+# 3. Activate your Python environment
 ```
 conda activate Atmo_EV333
 ```
@@ -44,11 +64,48 @@ To view your list of environments:
 ```
 conda env list
 ```
-An `*` indicates the active environment
+An `*` indicates the active environment. 
 
-## Installing Python libraries and packages
+# 4. Install Jupyter Notebook
+In this class we will use [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/) for running code. 
+1. Ensure that you are in your Atmo_EV333 environment (see Step 3 above)
+2. In the terminal: 
+```
+pip install notebook
+```
+
+# 5. Install additional Python libraries
+We will work with the following Python libraries. Install one at a time.
+- Matplotlib:
+```
+conda install -c conda-forge matplotlib
+```
+- SciPy:
+```
+conda install scipy
+```
+- Xarray:
+```
+conda install -c conda-forge xarray dask netCDF4 bottleneck
+```
+- cartopy:
+```
+pip install cartopy
+```
+- cmocean:
+```
+conda install -c conda-forge cmocean
+```
+
+Check that all of these libraries were installed successfully:
 ```
 conda list
 ```
+Xarray should install numpy by default, but check that numpy is there.
 
-## Launch Jupyter 
+# 6. Launch Jupyter Notebook and test loading your librariers 
+```
+jupyter notebook
+```
+
+
