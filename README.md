@@ -3,8 +3,22 @@ Repository for EV333 Atmospheric Dynamics at Colorado College
 
 # Getting Started
 
-## Installing Miniconda
-To check which version of Python you have, in a terminal:
+# [Instructions for Installing Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
+## macOS (M1)
+1. Run the following four commands in a terminal:
+```
+mkdir -p ~/miniconda3
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+```
+2. Initialize the zsh shell:
+```
+~/miniconda3/bin/conda init zsh
+```
+3. Close and relaunch the terminal 
+
+4. To check which version of Python you have: (should be Python 3.11.6)
 ```
 python --version
 ```
