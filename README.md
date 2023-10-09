@@ -74,9 +74,9 @@ In this class we will use [Jupyter Notebook](https://jupyter-notebook.readthedoc
 pip install notebook
 ```
 
-# 5. Install additional Python libraries
+# 5. Install additional Python packages
 We will work with the following Python libraries. Install one at a time.
-- Matplotlib:
+- [Matplotlib](https://matplotlib.org/stable/): 
 ```
 conda install -c conda-forge matplotlib
 ```
@@ -84,15 +84,15 @@ conda install -c conda-forge matplotlib
 ```
 conda install scipy
 ```
-- Xarray:
+- [Xarray]():
 ```
 conda install -c conda-forge xarray dask netCDF4 bottleneck
 ```
-- cartopy:
+- [cartopy](https://scitools.org.uk/cartopy/docs/latest/index.html): geospatial data processeing to produce maps and other geospatial data analyses
 ```
 pip install cartopy
 ```
-- cmocean:
+- [cmocean](https://matplotlib.org/cmocean/#installation): color palettes for maps
 ```
 conda install -c conda-forge cmocean
 ```
@@ -109,3 +109,12 @@ jupyter notebook
 ```
 This will launch a new tab in your browser. 
 
+Copy and paste the following code into the first cell:
+```
+import xarray as xr
+import numpy as np
+import matplotlib.pyplot as plt
+import cmocean as cm
+import cartopy
+import scipy
+```
