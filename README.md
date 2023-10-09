@@ -64,7 +64,14 @@ To view your list of environments:
 ```
 conda env list
 ```
-An `*` indicates the active environment. 
+Your system may look something similar to this. An `*` indicates the active environment:
+```
+# conda environments:
+#
+base                     /Users/alawman/miniconda3
+Atmo_EV333            *  /Users/alawman/miniconda3/envs/Atmo_EV333
+```
+
 
 # 4. Install Jupyter Notebook
 In this class we will use [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/) for running code. 
