@@ -3,8 +3,8 @@ Repository for EV333 Atmospheric Dynamics at Colorado College
 
 # Getting Started
 
-# 1. [Install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
-## macOS (M1 chip)
+## 1. [Install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
+### macOS (M1 chip)
 1. Run the following four commands in a terminal:
 ```
 mkdir -p ~/miniconda3
@@ -24,7 +24,7 @@ python --version
 ```
 You should have Python 3.11.
 
-## Windows
+### Windows
 1. Run the following four commands in a terminal:
 ```
 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe
@@ -43,7 +43,7 @@ python --version
 ```
 You should have Python 3.11.
 
-# 2. Create a new Python environment
+## 2. Create a new Python environment
 [Additional documentation for creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
 1. Open the terminal.
 2. To create an environment called Atmo_EV333 for this course:
@@ -56,7 +56,7 @@ proceed ([y]/n)?
 ```
 This creates the Atmo_EV333 environment. 
 
-# 3. Activate your Python environment
+## 3. Activate your Python environment
 ```
 conda activate Atmo_EV333
 ```
@@ -73,7 +73,7 @@ Atmo_EV333            *  /Users/alawman/miniconda3/envs/Atmo_EV333
 ```
 
 
-# 4. Install Jupyter Notebook
+## 4. Install Jupyter Notebook
 In this class we will use [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/) for running code. 
 1. Ensure that you are in your Atmo_EV333 environment (see Step 3 above)
 2. In the terminal: 
@@ -81,8 +81,9 @@ In this class we will use [Jupyter Notebook](https://jupyter-notebook.readthedoc
 pip install notebook
 ```
 
-# 5. Install additional Python packages
+## 5. Install additional Python packages
 We will work with the following Python libraries. Install one at a time.
+
 - [Matplotlib](https://matplotlib.org/stable/): 
 ```
 conda install -c conda-forge matplotlib
@@ -108,20 +109,24 @@ Check that all of these libraries were installed successfully:
 ```
 conda list
 ```
-Xarray should install numpy by default, but check that numpy is there.
+Xarray should install Numeric Python ([NumPy](https://numpy.org/install/)) by default, but check that numpy is there.
 
-# 6. Launch Jupyter Notebook and test loading your librariers 
+## 6. Create a place to store your EV333 course work.
+
+1. Create a new folder (directory) for EV333. For example a directory called `EV333_AtmosphericDynamics` in your Documents folder or wherever you store your coursework.
+
+2. Navigate to this directory using the command line. You will specify the full path to the directory. It may look something like this, but the path will be for your personal computer.
+```
+cd /Users/alawman/Documents/Python/EV333_AtmosphericDynamics
+```
+`cd` means change directory. The command `pwd` will print your current working directory. 
+
+## 7. Launch Jupyter Notebook and test your installation
+Launch Jupyter Notebook by typing the following command:
 ```
 jupyter notebook
 ```
 This will launch a new tab in your browser. 
 
-Copy and paste the following code into the first cell:
-```
-import xarray as xr
-import numpy as np
-import matplotlib.pyplot as plt
-import cmocean as cm
-import cartopy
-import scipy
-```
+1. Open the Notebook: `EV333_Test_Required_Libs.ipynb`
+2. Run the first cell. This will check if NumPy, Xarray, Matplotlib, SciPy, and Cartopy are successfully installed. A `Y` for everything means you're ready to go!
