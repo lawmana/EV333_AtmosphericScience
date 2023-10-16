@@ -122,7 +122,7 @@ cd /Users/alawman/Documents/Python/EV333_AtmosphericDynamics
 `cd` means change directory. The command `pwd` will print your current working directory. 
 
 ## 7. Launch Jupyter Notebook and test your installation
-Launch Jupyter Notebook by typing the following command:
+While in the `EV333_AtmosphericDynamics` directory, Launch Jupyter Notebook by entering following command:
 ```
 jupyter notebook
 ```
