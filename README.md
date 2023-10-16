@@ -128,5 +128,5 @@ jupyter notebook
 ```
 This will launch a new tab in your browser. 
 
-1. Open the Notebook: `EV333_Test_Required_Libs.ipynb`
+1. Open the Notebook: `EV333_Test_Required_Packages.ipynb`
 2. Run the first cell. This will check if NumPy, Xarray, Matplotlib, SciPy, and Cartopy are successfully installed. A `Y` for everything means you're ready to go!
