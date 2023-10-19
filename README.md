@@ -1,9 +1,9 @@
 # EV333_AtmosphericDynamics
 Repository for EV333 Atmospheric Dynamics at Colorado College. 
 
-# Getting Started
+# Getting Started with Python
 
-We will go over all of the instructions below during the first week of class.
+***We will go over all of the instructions below during the first week of class.***
 
 ## 1. [Install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
 Anaconda is a distribution of the Python programming language that simplifies package management. It is very popular for data science. Miniconda is a small version of Anaconda that includes the conda package manager, Python, and a few packages. Conda will help you easily install Python packages. 
