@@ -8,7 +8,7 @@ Repository for EV333 Atmospheric Dynamics at Colorado College.
 ## 1. [Install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
 Anaconda is a distribution of the Python programming language that simplifies package management. It is very popular for data science. Miniconda is a small version of Anaconda that includes the conda package manager, Python, and a few packages. Conda will help you easily install Python packages. 
 
-You will install miniconda and Python on your personal computer for this class. The installation instructions will be different depending on whether you have a Mac or Windows computer.
+You will install miniconda and Python on your personal computer for this class. The installation instructions will be different depending on whether you have a Mac or Windows computer. The following steps 2-6 will be the same for both operating systems.
 
 ### macOS (M1 chip)
 1. Run the following four commands in a terminal:
@@ -157,7 +157,7 @@ cd /Users/alawman/Documents/Python/EV333_AtmosphericDynamics
 `cd` means change directory. The command `pwd` will print your current working directory (in Mac/Linux terminals). 
 
 ## 7. Launch Jupyter Notebook and test your installation
-While in the `EV333_AtmosphericDynamics` directory, Launch Jupyter Notebook by entering following command:
+While in the `EV333_AtmosphericDynamics` directory, launch Jupyter Notebook by entering following in the terminal:
 ```
 jupyter notebook
 ```
