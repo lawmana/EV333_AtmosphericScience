@@ -123,11 +123,11 @@ proceed ([y]/n)?
 ```
 conda install -c conda-forge matplotlib
 ```
-- SciPy:
+- [SciPy](https://scipy.org/install/):
 ```
 conda install scipy
 ```
-- [Xarray]():
+- [Xarray](https://docs.xarray.dev/en/latest/getting-started-guide/installing.html):
 ```
 conda install -c conda-forge xarray dask netCDF4 bottleneck
 ```
