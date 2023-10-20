@@ -20,6 +20,7 @@ rm -rf ~/miniconda3/miniconda.sh
 ```
 2. Initialize the zsh shell:
 ```
+~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init zsh
 ```
 3. Close and relaunch the terminal
