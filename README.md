@@ -6,7 +6,7 @@ Repository for EV333 Atmospheric Dynamics at Colorado College.
 ***We will go over all of the instructions below during the first week of class.***
 
 ## 1. [Install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
-Anaconda is a distribution of the Python programming language that simplifies package management. It is very popular for data science. Miniconda is a small version of Anaconda that includes the conda package manager, Python, and a few packages. Conda will help you easily install Python packages. 
+Anaconda is a distribution of the Python programming language that simplifies package management. It is very popular for data science. Miniconda is a small version of Anaconda that includes the conda package manager, Python, and a few packages. Conda will help you easily install and manage Python packages and environments. 
 
 You will install miniconda and Python on your personal computer for this class. The installation instructions will be different depending on whether you have a Mac or Windows computer. The following steps 2-6 will be the same for both operating systems.
 
@@ -20,16 +20,11 @@ rm -rf ~/miniconda3/miniconda.sh
 ```
 2. Initialize the zsh shell:
 ```
-~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init zsh
 ```
 3. Close and relaunch the terminal
 
-5. To check which version of Python you have installed: 
-```
-python --version
-```
-You should have Python 3.11.
+5. To verify that conda is installed correctly, type `conda` in the command line. If this command displays output this indicates that your conda installation is complete.
 
 ### Windows
 **Option A: Try this option first**
@@ -47,11 +42,6 @@ You should have Python 3.11.
 10. Click **Install**. The installation may take some time.
 11. Once the installation is complete click **Next** and then **Finish.**
 12. To verify that conda is installed correctly, open a command prompt and type `conda.` If this command displays output this indicates that your conda installation is complete.
-13. To check which version of Python you have installed: 
-```
-python --version
-```
-You should have Python 3.11.
 
 **Option B: Only try this if Option A does not work**
 1. Run the following four commands in a terminal:
@@ -66,29 +56,32 @@ del miniconda.exe
 ```
 3. Close and relaunch the terminal
 
-5. To check which version of Python you have installed: 
-```
-python --version
-```
-You should have Python 3.11.
-
 ## 2. Create a new Python environment
 [Additional documentation for creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
 1. Open the terminal.
-2. To create an environment called Atmo_EV333 for this course:
+2. To create an environment called **Atmo_EV333** for this course with a specific version of Python (here Python 3.11):
 ```
-conda create --name Atmo_EV333
+conda create --name Atmo_EV333 python=3.11
 ```
 3. When conda asks you to proceed, type `y`:
 ```
 proceed ([y]/n)?
 ```
-This creates the Atmo_EV333 environment. 
+This creates the Atmo_EV333 environment.
 
 ## 3. Activate your Python environment
 ```
 conda activate Atmo_EV333
 ```
+
+To check which version of Python you have for this environment:
+
+```
+python --version
+```
+You should have Python 3.11.
+
+
 To view your list of environments:
 ```
 conda env list
@@ -100,7 +93,6 @@ Your system may look something similar to this. An `*` indicates the active envi
 base                     /Users/alawman/miniconda3
 Atmo_EV333            *  /Users/alawman/miniconda3/envs/Atmo_EV333
 ```
-
 
 ## 4. Install Jupyter Notebook
 We will use [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/) for all lab assignments that involve coding. Jupyter Notebook is an open-source application that allows users to create interactive documents that can contain live code, equations, visualizations, and narrative text. Notebooks will contain blocks of text and executable Python code. Notebooks have the file extension `.ipynb`.
