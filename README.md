@@ -38,10 +38,15 @@ rm -rf ~/miniconda3/miniconda.sh
 6. First you will need to agree to the license agreement.
 7. When prompted to **Select Installation Type** select the **Just Me (recommended)** option.
 8. When prompted to **Choose Install Location**, use the default location that is provided. This will typically look something like: `C:\Users\YourUserName\miniconda3`
-9. For the **Advanced Installation Options**, check the box that says to **Add Miniconda3 to my PATH environment variable**.
-10. Click **Install**. The installation may take some time.
-11. Once the installation is complete click **Next** and then **Finish.**
-12. To verify that conda is installed correctly, open a command prompt and type `conda.` If this command displays output this indicates that your conda installation is complete.
+9. For the **Advanced Installation Options**, check the boxes to (see image below):
+![AnacondaWindows](https://github.com/lawmana/EV333_AtmosphericDynamics/assets/29742094/511228e7-4fed-4e1e-9271-9aeafc2a5556)
+
+- Add Miniconda3 to my PATH environment variable
+- Register Miniconda3 as my default Python 3.11
+- Clear the package chache upon completion
+11. Click **Install**. The installation may take some time.
+12. Once the installation is complete click **Next** and then **Finish.**
+13. To verify that conda is installed correctly, open a command prompt and type `conda.` If this command displays output this indicates that your conda installation is complete.
 
 **Option B: Only try this if Option A does not work**
 1. Run the following four commands in a terminal:
