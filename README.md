@@ -8,58 +8,28 @@ Repository for EV333 Atmospheric Dynamics at Colorado College.
 ## 1. [Install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
 Anaconda is a distribution of the Python programming language that simplifies package management. It is very popular for data science. Miniconda is a small version of Anaconda that includes the conda package manager, Python, and a few packages. Conda will help you easily install and manage Python packages and environments. 
 
-You will install miniconda and Python on your personal computer for this class. The installation instructions will be different depending on whether you have a Mac or Windows computer. The following steps 2-6 will be the same for both operating systems.
+You will install miniconda and Python on your personal computer for this class. You will need to download the installer for your platform (macOS or Windows). The following steps 2-6 will be the same for both operating systems. 
 
-### macOS (M1 chip)
-1. Run the following four commands in a terminal:
-```
-mkdir -p ~/miniconda3
-curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-rm -rf ~/miniconda3/miniconda.sh
-```
-2. Initialize the zsh shell:
-```
-~/miniconda3/bin/conda init zsh
-```
-3. Close and relaunch the terminal
-
-5. To verify that conda is installed correctly, type `conda` in the command line. If this command displays output this indicates that your conda installation is complete.
-
-### Windows
-**Option A: Try this option first**
+***Important note if you have a Mac:** You will need to check which processor you have (Intel or Apple M1). To do this, click on the apple icon in the upper left corner of your screen and go to **About this Mac***
 
 1. Go to the Miniconda installation webpage: https://docs.conda.io/projects/miniconda/en/latest/
-2. Click on the option for the Windows Platform `Miniconda3 Windows 64-bit`. The option is outlined with a red rectange in the image below. This will start the download.
-  
-![MinicondaWindows](https://github.com/lawmana/EV333_AtmosphericDynamics/assets/29742094/5d4d89a0-2208-4127-982c-5a9494f01523)
+2. Click the installer that is approproate for your platform (see image below): Windows (red), macOS Intel (orange), macOS M1 (purple). This will start the download.
+<img width="1071" alt="MinicondaInstaller" src="https://github.com/lawmana/EV333_AtmosphericDynamics/assets/29742094/88aa0776-204e-4883-849c-ac5f51f046c8">
 
-4. Once downloaded, double click to open. Then follow the prompts to complete the installation.
-6. First you will need to agree to the license agreement.
-7. When prompted to **Select Installation Type** select the **Just Me (recommended)** option.
-8. When prompted to **Choose Install Location**, use the default location that is provided. This will typically look something like: `C:\Users\YourUserName\miniconda3`
-9. For the **Advanced Installation Options**, check the boxes to (see image below):
+4. Once downloaded, double click to open. Then follow the prompts to complete the installation. You will need to agree to the license agreement and select the destination for the installation. For the desintation, choose the default path that populates automatically.
+
+***For Windows:***
+
+4a. When prompted to **Select Installation Type** select the **Just Me (recommended)** option.
+
+4b. When prompted to **Choose Install Location**, use the default location that is provided.
+
+4c. For the **Advanced Installation Options**, check the boxes to (see image below):
 ![AnacondaWindows](https://github.com/lawmana/EV333_AtmosphericDynamics/assets/29742094/511228e7-4fed-4e1e-9271-9aeafc2a5556)
 
-- Add Miniconda3 to my PATH environment variable
-- Register Miniconda3 as my default Python 3.11
-- Clear the package chache upon completion
-11. Click **Install**. The installation may take some time.
-12. Once the installation is complete click **Next** and then **Finish.**
-13. To verify that conda is installed correctly, open a command prompt and type `conda.` If this command displays output this indicates that your conda installation is complete.
-
-**Option B: Only try this if Option A does not work**
-1. Run the following four commands in a terminal:
-```
-curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe
-start /wait "" miniconda.exe /S
-del miniconda.exe
-```
-2. Initialize the zsh shell:
-```
-~/miniconda3/bin/conda init zsh
-```
-3. Close and relaunch the terminal
+5. Click **Install**. The installation may take some time.
+6. Once the installation is complete click **Next** and then **Finish.**
+7. To verify that conda is installed correctly, open a command prompt and type `conda.` If this command displays output this indicates that your conda installation is complete.
 
 ## 2. Create a new Python environment
 [Additional documentation for creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
