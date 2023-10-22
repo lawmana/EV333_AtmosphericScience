@@ -10,7 +10,7 @@ Anaconda is a distribution of the Python programming language that simplifies pa
 
 You will install miniconda and Python on your personal computer for this class. You will need to download the installer for your platform (macOS or Windows). The following steps 2-6 will be the same for both operating systems. 
 
-***<ins>Important note if you have a Mac:<ins>** You will need to check which processor you have (Intel or Apple M1). To do this, click on the Apple icon in the upper left corner of your screen and go to **About this Mac***
+***<ins>Important note if you have a Mac:<ins>** You will need to check which processor you have (Intel or Apple M1). To do this, click on the Apple icon in the upper left corner of your screen and go to **About this Mac***.
 
 1. Go to the Miniconda installation webpage: https://docs.conda.io/projects/miniconda/en/latest/
 2. Click the installer that is approproate for your platform (see image below): Windows (red), macOS Intel (orange), macOS M1 (purple). This will start the download.
