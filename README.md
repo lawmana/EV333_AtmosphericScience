@@ -33,8 +33,8 @@ You will install miniconda and Python on your personal computer for this class. 
 
 ## 2. Create a new Python environment
 [Additional documentation for creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
-1. Open the terminal.
-2. To create an environment called **Atmo_EV333** for this course with a specific version of Python (here Python 3.11):
+1. Open the terminal (Mac) or command prompt (Windows).
+2. To create an environment called **Atmo_EV333** for this course with a specific version of Python (here Python 3.11), copy and paste the following line:
 ```
 conda create --name Atmo_EV333 python=3.11
 ```
@@ -45,6 +45,7 @@ proceed ([y]/n)?
 This creates the Atmo_EV333 environment.
 
 ## 3. Activate your Python environment
+In the terminal (Mac) or Command Prompt (Windows)
 ```
 conda activate Atmo_EV333
 ```
