@@ -34,15 +34,15 @@ You will install miniconda and Python on your personal computer for this class. 
 ## 2. Create a new Python environment
 [Additional documentation for creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
 1. Open the terminal (Mac) or command prompt (Windows).
-2. To create an environment called **Atmo_EV333** for this course with a specific version of Python (here Python 3.11), copy and paste the following line:
+2. To create an environment called **Atmo_EV333** for this course with a specific version of Python (here Python 3.11) and some of the Python packages you will need for this course, copy and paste the following line:
 ```
-conda create --name Atmo_EV333 python=3.11
+conda create --name Atmo_EV333 python=3.11 numpy xarray matplotlib cartopy scipy
 ```
 3. When conda asks you to proceed, type `y`:
 ```
 proceed ([y]/n)?
 ```
-This creates the Atmo_EV333 environment.
+This creates the Atmo_EV333 environment. The following Python packages are installed: [NumPy](https://numpy.org/doc/stable/index.html), [Matplotlib](https://matplotlib.org), [Cartopy](https://scitools.org.uk/cartopy/docs/latest/), and [SciPy](https://scipy.org). 
 
 ## 3. Activate your Python environment
 In the terminal (Mac) or Command Prompt (Windows)
@@ -76,44 +76,32 @@ We will use [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest
 To install Jupyter Notebook:
 
 1. Ensure that you are in your Atmo_EV333 environment (see Step 3 above)
-2. In the terminal: 
+2. In the terminal (Mac) or Command Prompt (Windows): 
 ```
-pip install notebook
+conda install -c conda-forge notebook
 ```
 
 ## 5. Install additional Python packages
-We will work with the following Python packages. Please install all of the packages one at a time. If conda asks you to proceed, type `y`:
 
-```
-proceed ([y]/n)?
-```
-
-- [Matplotlib](https://matplotlib.org/stable/): 
-```
-conda install -c conda-forge matplotlib
-```
-- [SciPy](https://scipy.org/install/):
-```
-conda install scipy
-```
-- [Xarray](https://docs.xarray.dev/en/latest/getting-started-guide/installing.html):
-```
-conda install -c conda-forge xarray dask netCDF4 bottleneck
-```
-- [cartopy](https://scitools.org.uk/cartopy/docs/latest/index.html): geospatial data processeing to produce maps and other geospatial data analyses
-```
-pip install cartopy
-```
 - [cmocean](https://matplotlib.org/cmocean/#installation): color palettes for maps
 ```
 conda install -c conda-forge cmocean
 ```
+When asked if you want to proceed, type `y`:
+```
+proceed ([y]/n)?
+```
+
+- [Xarray](https://docs.xarray.dev/en/latest/getting-started-guide/installing.html):
+```
+conda install -c conda-forge xarray dask netCDF4 bottleneck
+```
 
 Check that all of the packages were successfully installed:
+
 ```
 conda list
 ```
-Xarray should install Numeric Python ([NumPy](https://numpy.org/install/)) by default, but check that numpy is there.
 
 ## 6. Create a directory on your computer for your EV333 course work.
 
