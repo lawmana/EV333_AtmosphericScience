@@ -92,11 +92,6 @@ When asked if you want to proceed, type `y`:
 proceed ([y]/n)?
 ```
 
-- [Xarray](https://docs.xarray.dev/en/latest/getting-started-guide/installing.html):
-```
-conda install -c conda-forge xarray dask netCDF4 bottleneck
-```
-
 Check that all of the packages were successfully installed:
 
 ```
