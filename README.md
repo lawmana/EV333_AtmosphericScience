@@ -92,6 +92,11 @@ When asked if you want to proceed, type `y`:
 proceed ([y]/n)?
 ```
 
+- Install NetCDF4
+```
+pip install netCDF4
+```
+
 Check that all of the packages were successfully installed:
 
 ```
