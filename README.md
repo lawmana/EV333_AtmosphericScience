@@ -122,3 +122,11 @@ This will launch a new tab in your browser.
 
 1. Open the Notebook: `EV333_Test_Required_Packages.ipynb`
 2. Run the first cell. This will check if NumPy, Xarray, Matplotlib, SciPy, and Cartopy are successfully installed. A `Y` for everything means you're ready to go!
+
+## 8. Create a reference guide for launching Jupyter Notebook
+
+1. Write down the steps and commands you need to launch Jupyter Notebook (additional instructions will be provided in class).
+2. Shut down Jupyter Notebook
+3. Quit your terminal (Mac) or command prompt (Windows)
+4. Download the Lab0 Notebook & data file from GitHub and save them to your `EV333_AtmosphericDynamics` directory.
+5. Launch the Lab0 Jupyter Notebook using only your reference guide. Revise your instructions if needed.
