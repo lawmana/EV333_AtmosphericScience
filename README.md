@@ -24,7 +24,7 @@ You will install miniconda and Python on your personal computer for this class. 
 
 4b. When prompted to **Choose Install Location**, use the default location that is provided.
 
-4c. For the **Advanced Installation Options**, check the boxes to (see image below):
+4c. For the **Advanced Installation Options**, check the boxes in the image below:
 ![AnacondaWindows](https://github.com/lawmana/EV333_AtmosphericDynamics/assets/29742094/511228e7-4fed-4e1e-9271-9aeafc2a5556)
 
 5. Click **Install**. The installation may take some time.
