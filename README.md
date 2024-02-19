@@ -29,7 +29,7 @@ You will install miniconda and Python on your personal computer for this class. 
 
 5. Click **Install**. The installation may take some time.
 6. Once the installation is complete click **Next** and then **Finish.**
-7. To verify that conda is installed correctly, open a command prompt and type `conda.` If this command displays output this indicates that your conda installation is complete.
+7. To verify that conda is installed correctly, open a command prompt and type `conda`. If this command displays output this indicates that your conda installation is complete.
 
 ## 2. Create a new Python environment
 [Additional documentation for creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
