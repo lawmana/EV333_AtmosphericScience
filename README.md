@@ -107,7 +107,7 @@ conda list
 
 1. Create a new folder (directory) for EV333. For example a directory called `EV333_AtmosphericDynamics` in your Documents folder or wherever you store your course materials.
 
-2. Navigate to this directory using the command line. You will specify the full path to the directory. The command may look something like this (on a Mac), but the path will be for your personal computer:
+2. Navigate to this directory from the command line. You will specify the full path to the directory. The command may look something like this (on a Mac), but the path will be for your personal computer:
 ```
 cd /Users/alawman/Documents/Python/EV333_AtmosphericDynamics
 ```
@@ -117,7 +117,7 @@ cd /Users/alawman/Documents/Python/EV333_AtmosphericDynamics
 
 1. Download the Notebook `EV333_Test_Required_Packages.ipynb` from this GitHub repository and transfer it to your `EV333_AtmosphericDynamics` directory.
 
-2. Navigate to your `EV333_AtmosphericDynamics` directory using the command line. Then launch Jupyter Notebook by entering following in the terminal:
+2. Navigate to your `EV333_AtmosphericDynamics` directory from the command line. Then launch Jupyter Notebook by entering following in the terminal:
 ```
 jupyter notebook
 ```
