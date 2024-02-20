@@ -114,14 +114,17 @@ cd /Users/alawman/Documents/Python/EV333_AtmosphericDynamics
 `cd` means change directory. The command `pwd` will print your current working directory. The command `ls` (MacOS/Linux) or `dir` (Windows) will list all the files and directories in the working directory.
 
 ## 7. Launch Jupyter Notebook and test your installation
-While in the `EV333_AtmosphericDynamics` directory, launch Jupyter Notebook by entering following in the terminal:
+
+1. Download the Notebook `EV333_Test_Required_Packages.ipynb` from this GitHub repository and transfer it to your `EV333_AtmosphericDynamics` directory.
+
+2. Navigate to your `EV333_AtmosphericDynamics` directory using the command line. Then launch Jupyter Notebook by entering following in the terminal:
 ```
 jupyter notebook
 ```
 This will launch a new tab in your browser. 
 
-1. Open the Notebook: `EV333_Test_Required_Packages.ipynb`
-2. Run the first cell. This will check if NumPy, Xarray, Matplotlib, Cartopy SciPy, cmocean, and the NetCDF4 packages are successfully installed. If you receive an `N` for any package, double check that you installed the package in your Atmo_EV333 environment. A `Y` for everything means you're ready to go!
+3. Open the Notebook: `EV333_Test_Required_Packages.ipynb`
+4. Run the first cell by clicking the play button. This will check if NumPy, Xarray, Matplotlib, Cartopy SciPy, cmocean, and the NetCDF4 packages are successfully installed. If you receive an `N` for any package, double check that you installed the package in your Atmo_EV333 environment. A `Y` for everything means you're ready to go!
  
 ## 8. Create a reference guide for launching Jupyter Notebook
 
