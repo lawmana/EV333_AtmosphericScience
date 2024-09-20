@@ -36,7 +36,7 @@ You will install miniconda and Python on your personal computer for this class. 
 1. Open the terminal (Mac) or command prompt (Windows).
 2. To create an environment called **Atmo_EV333** for this course with a specific version of Python (here Python 3.11) and some of the Python packages you will need for this course, copy and paste the following line:
 ```
-conda create --name Atmo_EV333 python=3.11 numpy xarray matplotlib cartopy scipy
+conda create --name Atmo_EV333 python=3.11.5 numpy xarray matplotlib cartopy scipy
 ```
 3. When conda asks you to proceed, type `y`:
 ```
@@ -94,7 +94,7 @@ proceed ([y]/n)?
 
 - Install NetCDF4
 ```
-pip install netCDF4
+pip install netCDF4==1.6.2
 ```
 
 Check that all of the packages were successfully installed:
