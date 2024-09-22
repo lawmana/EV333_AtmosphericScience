@@ -14,7 +14,7 @@ You will install miniconda and Python on your personal computer for this class. 
 
 1. Go to the Miniconda installation webpage: https://docs.conda.io/projects/miniconda/en/latest/
 2. Click the installer that is approproate for your platform (see image below): Windows (red), macOS Intel (orange), macOS M1 (purple). This will start the download.
-<img width="1071" alt="MinicondaInstaller" src="https://github.com/lawmana/EV333_AtmosphericDynamics/assets/29742094/88aa0776-204e-4883-849c-ac5f51f046c8">
+![Miniconda_Latest](https://github.com/user-attachments/assets/409be433-16ba-41e3-b8be-3f9f69d37dd5)
 
 4. Once downloaded, run the installer. Then follow the prompts to complete the installation. You will need to agree to the license agreement and select the destination for the installation. For the desintation, choose the default path that populates automatically.
 
