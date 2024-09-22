@@ -62,7 +62,7 @@ The following Python packages were installed: [NumPy](https://numpy.org/doc/stab
 
 
 ## 5. Activate your Python environment
-In the terminal (Mac) or Command Prompt (Windows)
+In the terminal (Mac) or Command Prompt (Windows):
 ```
 conda activate Atmo_EV333
 ```
@@ -89,7 +89,7 @@ Atmo_EV333            *  /Users/alawman/miniconda3/envs/Atmo_EV333
 
 ## 6. Install additional Python packages
 
-Install NetCDF4
+Install NetCDF4 by copying and pasting the following line in the terminal or Command Prompt:
 ```
 pip install netCDF4==1.6.2
 ```
