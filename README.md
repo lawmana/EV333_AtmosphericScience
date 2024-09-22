@@ -31,20 +31,37 @@ You will install miniconda and Python on your personal computer for this class. 
 6. Once the installation is complete click **Next** and then **Finish.**
 7. To verify that conda is installed correctly, open a command prompt and type `conda`. If this command displays output this indicates that your conda installation is complete.
 
-## 2. Create a new Python environment
-[Additional documentation for creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
-1. Open the terminal (Mac) or command prompt (Windows).
-2. To create an environment called **Atmo_EV333** for this course with a specific version of Python (here Python 3.11) and some of the Python packages you will need for this course, copy and paste the following line:
-```
-conda create --name Atmo_EV333 python=3.11.5 numpy xarray matplotlib cartopy scipy
-```
-3. When conda asks you to proceed, type `y`:
-```
-proceed ([y]/n)?
-```
-This creates the Atmo_EV333 environment. The following Python packages are installed: [NumPy](https://numpy.org/doc/stable/index.html), [Matplotlib](https://matplotlib.org), [Cartopy](https://scitools.org.uk/cartopy/docs/latest/), and [SciPy](https://scipy.org). 
+## 2. Create a directory on your computer for your EV333 course work.
 
-## 3. Activate your Python environment
+1. Create a new folder (directory) for EV333. For example a directory called `EV333_AtmosphericDynamics` in your Documents folder or wherever you store your course materials.
+
+2. Navigate to this directory from the command line. You will specify the full path to the directory. The command may look something like this (on a Mac), but the path will be for your personal computer:
+```
+cd /Users/alawman/Documents/Python/EV333_AtmosphericDynamics
+```
+`cd` means change directory. The command `pwd` will print your current working directory. The command `ls` (MacOS/Linux) or `dir` (Windows) will list all the files and directories in the working directory.
+
+3. Download the text file `requirements.txt` from this GitHub repository and transfer it to your `EV333_AtmosphericDynamics` directory.
+
+## 3. Add conda-forge 
+1. Open the terminal (Mac) or command prompt (Windows).
+2. Copy and paste the following line and then hit return/enter:
+```
+conda config --add channels conda-forge
+```
+
+## 4. Create a new Python environment
+[Additional documentation for creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
+1. To create an environment called **Atmo_EV333** for this course with a specific version of Python (here Python 3.11) and the packages you will need for this course, copy and paste the following line:
+```
+conda create --name Atmo_EV333 --file requirements.txt
+```
+This creates the Atmo_EV333 environment. 
+
+The following Python packages were installed: [NumPy](https://numpy.org/doc/stable/index.html), [Matplotlib](https://matplotlib.org), [Cartopy](https://scitools.org.uk/cartopy/docs/latest/), [SciPy](https://scipy.org), [cmocean](https://www.google.com/search?client=safari&rls=en&q=cmocean&ie=UTF-8&oe=UTF-8).
+
+
+## 5. Activate your Python environment
 In the terminal (Mac) or Command Prompt (Windows)
 ```
 conda activate Atmo_EV333
@@ -70,29 +87,9 @@ base                     /Users/alawman/miniconda3
 Atmo_EV333            *  /Users/alawman/miniconda3/envs/Atmo_EV333
 ```
 
-## 4. Install Jupyter Notebook
-We will use [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/) for all lab assignments that involve coding. Jupyter Notebook is an open-source application that allows users to create interactive documents that can contain live code, equations, visualizations, and narrative text. Notebooks will contain blocks of text and executable Python code. Notebooks have the file extension `.ipynb`.
+## 6. Install additional Python packages
 
-To install Jupyter Notebook:
-
-1. Ensure that you are in your Atmo_EV333 environment (see Step 3 above)
-2. In the terminal (Mac) or Command Prompt (Windows): 
-```
-conda install -c conda-forge notebook
-```
-
-## 5. Install additional Python packages
-
-- [cmocean](https://matplotlib.org/cmocean/#installation): color palettes for maps
-```
-conda install -c conda-forge cmocean
-```
-When asked if you want to proceed, type `y`:
-```
-proceed ([y]/n)?
-```
-
-- Install NetCDF4
+Install NetCDF4
 ```
 pip install netCDF4==1.6.2
 ```
@@ -103,17 +100,8 @@ Check that all of the packages were successfully installed:
 conda list
 ```
 
-## 6. Create a directory on your computer for your EV333 course work.
-
-1. Create a new folder (directory) for EV333. For example a directory called `EV333_AtmosphericDynamics` in your Documents folder or wherever you store your course materials.
-
-2. Navigate to this directory from the command line. You will specify the full path to the directory. The command may look something like this (on a Mac), but the path will be for your personal computer:
-```
-cd /Users/alawman/Documents/Python/EV333_AtmosphericDynamics
-```
-`cd` means change directory. The command `pwd` will print your current working directory. The command `ls` (MacOS/Linux) or `dir` (Windows) will list all the files and directories in the working directory.
-
 ## 7. Launch Jupyter Notebook and test your installation
+We will use [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/) for all lab assignments that involve coding. Jupyter Notebook is an open-source application that allows users to create interactive documents that can contain live code, equations, visualizations, and narrative text. Notebooks will contain blocks of text and executable Python code. Notebooks have the file extension `.ipynb`.
 
 1. Download the Notebook `EV333_Test_Required_Packages.ipynb` from this GitHub repository and transfer it to your `EV333_AtmosphericDynamics` directory.
 
@@ -125,7 +113,7 @@ This will launch a new tab in your browser.
 
 3. Open the Notebook: `EV333_Test_Required_Packages.ipynb`
 4. Run the first cell by clicking the play button. This will check if NumPy, Xarray, Matplotlib, Cartopy SciPy, cmocean, and the NetCDF4 packages are successfully installed. If you receive an `N` for any package, double check that you installed the package in your Atmo_EV333 environment. A `Y` for everything means you're ready to go!
- 
+
 ## 8. Create a reference guide for launching Jupyter Notebook
 
 1. Write down the steps and commands you need to launch Jupyter Notebook (additional instructions will be provided in class).
