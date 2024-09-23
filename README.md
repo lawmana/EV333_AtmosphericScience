@@ -1,5 +1,5 @@
-# EV333_AtmosphericDynamics
-Repository for EV333 Atmospheric Dynamics at Colorado College. 
+# EV333_AtmosphericScience
+Repository for EV333 Atmospheric Science at Colorado College. 
 
 # Getting Started with Python
 
@@ -25,7 +25,7 @@ You will install miniconda and Python on your personal computer for this class. 
 4b. When prompted to **Choose Install Location**, use the default location that is provided.
 
 4c. For the **Advanced Installation Options**, check the boxes in the image below:
-![AnacondaWindows](https://github.com/lawmana/EV333_AtmosphericDynamics/assets/29742094/511228e7-4fed-4e1e-9271-9aeafc2a5556)
+![AnacondaWindows](https://github.com/lawmana/EV333_Atmospheric/assets/29742094/511228e7-4fed-4e1e-9271-9aeafc2a5556)
 
 5. Click **Install**. The installation may take some time.
 6. Once the installation is complete click **Next** and then **Finish.**
@@ -103,7 +103,7 @@ conda list
 ## 7. Launch Jupyter Notebook and test your installation
 We will use [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/) for all lab assignments that involve coding. Jupyter Notebook is an open-source application that allows users to create interactive documents that can contain live code, equations, visualizations, and narrative text. Notebooks will contain blocks of text and executable Python code. Notebooks have the file extension `.ipynb`.
 
-1. Download the Notebook `EV333_Test_Required_Packages.ipynb` from this GitHub repository and transfer it to your `EV333_AtmosphericDynamics` directory.
+1. Download the Notebook `EV333_Test_Required_Packages.ipynb` from this GitHub repository and transfer it to your `EV333_AtmosphericScience` directory.
 
 2. Navigate to your `EV333_AtmosphericScience` directory from the command line. Then launch Jupyter Notebook by entering following in the terminal:
 ```
@@ -119,7 +119,7 @@ This will launch a new tab in your browser.
 1. Write down the steps and commands you need to launch Jupyter Notebook (additional instructions will be provided in class).
 2. Shut down Jupyter Notebook
 3. Quit your terminal (Mac) or command prompt (Windows)
-4. Download the Lab0 Notebook & data file from GitHub and save them to your `EV333_AtmosphericDynamics` directory.
+4. Download the Lab0 Notebook & data file from GitHub and save them to your `EV333_AtmosphericScience` directory.
 5. Launch the Lab0 Jupyter Notebook using only your reference guide. Revise your instructions if needed.
 
 ## 9. Begin practicting Python!
