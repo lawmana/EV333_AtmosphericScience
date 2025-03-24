@@ -119,7 +119,7 @@ This will launch a new tab in your browser.
 1. Write down the steps and commands you need to launch Jupyter Notebook (additional instructions will be provided in class).
 2. Shut down Jupyter Notebook
 3. Quit your terminal (Mac) or command prompt (Windows)
-4. Download the Lab0 Notebook & data file from GitHub and save them to your `EV333_AtmosphericScience` directory.
+4. Download the EV333_Intro notebook into you `EV333_AtmosphericScience` directory.
 5. Launch the Lab0 Jupyter Notebook using only your reference guide. Revise your instructions if needed.
 
 ## 9. Begin practicting Python!
