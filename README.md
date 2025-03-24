@@ -8,7 +8,7 @@ Repository for EV333 Atmospheric Science at Colorado College.
 ## 1. [Install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
 Anaconda is a distribution of the Python programming language that simplifies package management. It is very popular for data science. Miniconda is a small version of Anaconda that includes the conda package manager, Python, and a few packages. Conda will help you easily install and manage Python packages and environments. 
 
-You will install miniconda and Python on your personal computer for this class. You will need to download the installer for your platform (macOS or Windows). **Important Note:** If you already have Anaconda or miniconda installed on your computer (eg., from another class), skip to the next step.
+You will install miniconda and Python on your personal computer for this class. You will need to download the installer for your platform (macOS or Windows). **Important Note: If you already have Anaconda or miniconda installed on your computer (eg., from another class), skip to the next step.**
 
 ***<ins>Important note if you have a Mac:<ins>** You will need to check which processor you have (Intel or Apple M1). To do this, click on the Apple icon in the upper left corner of your screen and go to **About this Mac***.
 
