@@ -12,24 +12,14 @@ You will install miniconda and Python on your personal computer for this class. 
 
 ***<ins>Important note if you have a Mac:<ins>** You will need to check which processor you have (Intel or Apple M1). To do this, click on the Apple icon in the upper left corner of your screen and go to **About this Mac***.
 
-1. Go to the Miniconda installation webpage: [https://docs.conda.io/projects/miniconda/en/latest/](https://www.anaconda.com/docs/getting-started/miniconda/install)
-2. Click the installer that is approproate for your platform (see image below): Windows (red), macOS Intel (orange), macOS M1 (purple). This will start the download.
-![Miniconda_Latest](https://github.com/user-attachments/assets/409be433-16ba-41e3-b8be-3f9f69d37dd5)
-
-4. Once downloaded, run the installer. Then follow the prompts to complete the installation. You will need to agree to the license agreement and select the destination for the installation. For the desintation, choose the default path that populates automatically.
-
-***For Windows:***
-
-4a. When prompted to **Select Installation Type** select the **Just Me (recommended)** option.
-
-4b. When prompted to **Choose Install Location**, use the default location that is provided.
-
-4c. For the **Advanced Installation Options**, check the boxes in the image below:
-![AnacondaWindows](https://github.com/lawmana/EV333_AtmosphericScience/assets/29742094/511228e7-4fed-4e1e-9271-9aeafc2a5556)
-
-5. Click **Install**. The installation may take some time.
-6. Once the installation is complete click **Next** and then **Finish.**
-7. To verify that conda is installed correctly, open a new terminal and type `conda`. If this command displays output this indicates that your conda installation is complete.
+1. Go to the Miniconda installation webpage: [[https://docs.conda.io/projects/miniconda/en/latest/](https://www.anaconda.com/docs/getting-started/miniconda/install)](https://www.anaconda.com/docs/getting-started/miniconda/install)
+2. Click the Basic install instructions that are approproate for your operatiung system (Windows or MacOS/Linux)
+3. Work through the install instructions provided (you will need to enter your email address to download miniconda).
+4. Choose the **64-Bit Graphical Installer** option that is appropriate for your operating system.
+5. Follow the prompts to complete the installation. You will need to agree to the license agreement and select the destination for the installation. For the desintation, choose the default path that populates automatically.
+6. Click **Install**. The installation may take some time.
+7. Once the installation is complete click **Next** and then **Finish.**
+8. To verify that conda is installed correctly, open a new terminal and type `conda`. If this command displays output this indicates that your conda installation is complete.
 
 ## 2. Create a directory on your computer for your EV333 course work.
 
@@ -119,7 +109,7 @@ This will launch a new tab in your browser.
 1. Write down the steps and commands you need to launch Jupyter Notebook (additional instructions will be provided in class).
 2. Shut down Jupyter Notebook
 3. Quit your terminal (Mac) or command prompt (Windows)
-4. Download the EV333_Intro notebook into you `EV333_AtmosphericScience` directory.
+4. Download the EV333_Intro.ipynb notebook into you `EV333_AtmosphericScience` directory.
 5. Launch the EV333_Intro Jupyter Notebook using only your reference guide. Revise your instructions if needed.
 
 ## 9. Begin practicting Python!
