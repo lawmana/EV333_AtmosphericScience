@@ -109,8 +109,8 @@ This will launch a new tab in your browser.
 1. Write down the steps and commands you need to launch Jupyter Notebook (additional instructions will be provided in class).
 2. Shut down Jupyter Notebook
 3. Quit your terminal (Mac) or command prompt (Windows)
-4. Download the EV333_Intro.ipynb notebook into you `EV333_AtmosphericScience` directory.
-5. Launch the EV333_Intro Jupyter Notebook using only your reference guide. Revise your instructions if needed.
+4. Download the `EV333_Intro.ipynb` notebook into you `EV333_AtmosphericScience` directory.
+5. Launch the EV333_Intro using Jupyter Notebook using only your reference guide. Revise your instructions if needed.
 
 ## 9. Begin practicting Python!
 Begin working through the EV333_Intro instructions to start gaining familiarity with Python.
