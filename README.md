@@ -120,7 +120,7 @@ This will launch a new tab in your browser.
 2. Shut down Jupyter Notebook
 3. Quit your terminal (Mac) or command prompt (Windows)
 4. Download the EV333_Intro notebook into you `EV333_AtmosphericScience` directory.
-5. Launch the Lab0 Jupyter Notebook using only your reference guide. Revise your instructions if needed.
+5. Launch the EV333_Intro Jupyter Notebook using only your reference guide. Revise your instructions if needed.
 
 ## 9. Begin practicting Python!
-Launch the EV333_Intro notebook and begin working through the instructions.
+Begin working through the EV333_Intro instructions to start gaining familiarity with Python.
