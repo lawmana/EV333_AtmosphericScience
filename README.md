@@ -13,7 +13,7 @@ You will install miniconda and Python on your personal computer for this class. 
 ***<ins>Important note if you have a Mac:<ins>** You will need to check which processor you have (Intel or Apple M1). To do this, click on the Apple icon in the upper left corner of your screen and go to **About this Mac***.
 
 1. Go to the Miniconda installation webpage: https://www.anaconda.com/docs/getting-started/miniconda/install
-2. Click the Basic install instructions that are approproate for your operatiung system (Windows or MacOS/Linux)
+2. Click the Basic install instructions that are approproate for your operating system (Windows or MacOS/Linux).
 3. Work through the install instructions provided (you will need to enter your email address to download miniconda).
 4. Choose the **64-Bit Graphical Installer** option that is appropriate for your operating system.
 5. Follow the prompts to complete the installation. You will need to agree to the license agreement and select the destination for the installation. For the desintation, choose the default path that populates automatically.
