@@ -83,7 +83,10 @@ Install NetCDF4 by copying and pasting the following line in the terminal or Com
 ```
 pip install netCDF4==1.6.2
 ```
-
+Reinstall dask by pasting the following line in the terminal:
+```
+conda install dask --force-reinstall
+```
 Check that all of the packages were successfully installed:
 
 ```
