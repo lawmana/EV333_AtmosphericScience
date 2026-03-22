@@ -12,14 +12,15 @@ You will install miniconda and Python on your personal computer for this class. 
 
 ***<ins>If you have a Mac:<ins>** You will need to check which processor you have (Intel or Apple M1). To do this, click on the Apple icon in the upper left corner of your screen and go to **About this Mac***.
 
-1. Go to the Miniconda installation webpage: https://www.anaconda.com/docs/getting-started/miniconda/install
-2. Click the Basic install instructions that are approproate for your operating system (Windows or MacOS/Linux).
-3. Work through the install instructions provided (you will need to enter your email address to download miniconda).
-4. Choose the **64-Bit Graphical Installer** option that is appropriate for your operating system.
-5. Follow the prompts to complete the installation. You will need to agree to the license agreement and select the destination for the installation. For the desintation, choose the default path that populates automatically.
-6. Click **Install**. The installation may take some time.
-7. Once the installation is complete click **Next** and then **Finish.**
-8. To verify that conda is installed correctly, open a new terminal and type `conda`. If this command displays output this indicates that your conda installation is complete.
+1. Go to the Miniconda installation webpage: [https://www.anaconda.com/docs/getting-started/miniconda/install](https://repo.anaconda.com/miniconda/)
+2. Choose the latest Miniconda3 installer that is appropriate for your operating system. This will download a file to your computer.
+    - If you are using Windows select `Miniconda3-latest-Windows-x86_64.exe`
+    - If you are using MacOSX with an M processor (M1, M1 Max, M2, etc.) select `Miniconda3-latest-MacOSX-arm64.pkg`
+    - If you are using MacOSX with an Intel processor select `Miniconda3-latest-MacOSX-x86_64.pkg`
+3. Click on the file and follow the prompts to complete the installation. You will need to agree to the license agreement and select the option to install for all users of this computer. Do not change the destination for the installation.
+4. Click **Install**. The installation may take some time.
+5. Once the installation is complete click **Next** and then **Finish.**
+6. To verify that conda is installed correctly, open a new terminal and type `conda`. If this command displays output this indicates that your conda installation is complete.
 
 ## 2. Create a directory on your computer for your EV333 course work.
 
@@ -116,4 +117,4 @@ This will launch a new tab in your browser.
 5. Launch the EV333_Intro using Jupyter Notebook using only your reference guide. Revise your instructions if needed.
 
 ## 9. Begin practicting Python!
-Begin working through the EV333_Intro instructions to start gaining familiarity with Python.
+Begin working through the EV333_Intro instructions to start gaining familiarity with Python and Jupyter Notebooks.
