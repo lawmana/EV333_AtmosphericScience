@@ -1,10 +1,21 @@
 # Sample Python code for final projects
 
-This document provides some example code for the following: 
-1.	How to subset a globally gridded dataset to a smaller region
-2.	How to calculate a regional time series
-3.	How to change the central longitude on a map
-4.	How to change the latitude and longitude axes extents for a regional map
+This document provides some example code for:
+
+1. Subsetting a globally gridded dataset to a smaller region
+2. Calculating a regional time series
+3. Changing the central longitude when generating a map
+4. Changing the latitude and longitude axes extents for a regional map
+
+Remember to import the following packages at the beginning so that you can load, manipulate, and plot the data.
+```
+import xarray as xr
+import numpy as np
+import matplotlib.pyplot as plt
+import cmocean
+import cartopy.crs as ccrs
+import cartopy.feature as cfeature
+```
 
 ## 1. How to subset a globally gridded dataset to a smaller region
 **Example 1: Niño 3.4 region**
