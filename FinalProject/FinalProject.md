@@ -39,7 +39,7 @@ ROI = ds.where((ds.lon >= -100+360) &
                (ds.lat >= 5) &
                (ds.lat <= 35), drop = True)
 ```
-<img width="223" height="238" alt="image" src="https://github.com/user-attachments/assets/9dcb5b4e-fabf-42bc-90bb-60acbdd0b5a1" />
+<img width="323" height="338" alt="image" src="https://github.com/user-attachments/assets/9dcb5b4e-fabf-42bc-90bb-60acbdd0b5a1" />
 
 **Figure 1.** Mean sea surface temperature subset to the Gulf of Mexico and Caribbean Sea. The central longitude for the map is 82.5°W.
 
@@ -82,14 +82,14 @@ proj = ccrs.PlateCarree(central_longitude = 45)
 
 ## 4. How to change the axis extent for a regional map
 
-If you’d like to plot a regional instead of global map, you can update the axes extent using the ax. set_extent() method. This should be done after you plot the data but before you save the figure. 
+If you’d like to plot a regional instead of global map, you can update the axes extent using the `ax.set_extent()` method. This should be done after you plot the data but before you save the figure. 
 
-In Figure 1 above the axes were set to [5° to 35°N, 65 to 100°W]. 
+In Figure 1 above the axes were set to [5° to 35°N, 65 to 100°W] using the following line of code: 
 ```
 ax.set_extent([-100+360, -65+360, 5, 35], crs=ccrs.PlateCarree())
 ```
 
-A more generic example is shown below where you can update longitude1, longitude2, latitude1, and longitude2 to you values: 
+A more generic example is shown below where you can update longitude1, longitude2, latitude1, and longitude2 to the bopunds you'd like for your region: 
 ```
 ax.set_extent([longitude1, longitude2, latitude1, latitude2], crs=ccrs.PlateCarree())
 ```
