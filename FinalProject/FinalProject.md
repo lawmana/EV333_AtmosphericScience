@@ -1,120 +1,96 @@
-# EV333_AtmosphericScience
-Repository for EV333 Atmospheric Science at Colorado College. 
+# Sample Python code for final projects
 
-# Getting Started with Python
+This document provides some example code for the following: 
+1.	How to subset a globally gridded dataset to a smaller region
+2.	How to calculate a regional time series
+3.	How to change the central longitude on a map
+4.	How to change the latitude and longitude axes extents for a regional map
 
-***We will go over the instructions below during the first week of class.***
+## 1. How to subset a globally gridded dataset to a smaller region
+**Example 1: Niño 3.4 region**
 
-## 1. [Install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
-Anaconda is a distribution of the Python programming language that simplifies package management. It is very popular for data science. Miniconda is a small version of Anaconda that includes the conda package manager, Python, and a few packages. Conda will help you easily install and manage Python packages and environments. 
+The example below will subset a globally gridded dataset called ds to the Niño 3.4 region in the central equatorial Pacific [5°S to 5°N and 170°W to 120°W]. 
 
-You will install miniconda and Python on your personal computer for this class. You will need to download the installer for your platform (macOS or Windows). **Important Note: If you already have Anaconda or miniconda installed on your computer (eg., from another class), skip to the next step.**
+All the ERA5 data we used in class are on a [0, 360] °E grid. For locations in the western hemisphere, a longitude of 170°W is equivalent to -170°E. To convert to a [0, 360] grid add 360 to the longitude values:
 
-***<ins>If you have a Mac:<ins>** You will need to check which processor you have (Intel or Apple M1, M2, etc.). To do this, click on the Apple icon in the upper left corner of your screen and go to **About this Mac***.
+-170+360 = 190
 
-1. Go to the Miniconda installation webpage: [https://www.anaconda.com/docs/getting-started/miniconda/install](https://repo.anaconda.com/miniconda/)
-2. Choose the latest Miniconda3 installer that is appropriate for your operating system. This will download a file to your computer.
-    - If you are using Windows select `Miniconda3-latest-Windows-x86_64.exe`
-    - If you are using MacOSX with an M processor (M1, M1 Max, M2, etc.) select `Miniconda3-latest-MacOSX-arm64.pkg`
-    - If you are using MacOSX with an Intel processor select `Miniconda3-latest-MacOSX-x86_64.pkg`
-3. Click on the file and follow the prompts to complete the installation. You will need to agree to the license agreement and select the option to install for all users of this computer. Do not change the destination for the installation.
-4. Click **Install**. The installation may take some time.
-5. Once the installation is complete click **Next** and then **Finish.**
-6. To verify that conda is installed correctly, open a new terminal and type `conda`. If this command displays output this indicates that your conda installation is complete.
+-120+360 = 240
 
-## 2. Create a directory on your computer for your EV333 course work.
-
-1. Create a new folder (directory) for EV333. For example a directory called `EV333_AtmosphericScience` in your Documents folder or wherever you store your course materials.
-
-2. Navigate to this directory from the command line. You will specify the full path to the directory. The command may look something like this (on a Mac), but the path will be for your personal computer:
-```
-cd /Users/alawman/Documents/Python/EV333_AtmosphericScience
-```
-`cd` means change directory. The command `pwd` will print your current working directory. The command `ls` (MacOS/Linux) or `dir` (Windows) will list all the files and directories in the working directory.
-
-3. Download the text file `requirements.txt` from this GitHub repository and transfer it to your `EV333_AtmosphericScience` directory.
-
-## 3. Add conda-forge 
-1. Open the terminal (Mac) or command prompt (Windows).
-2. Copy and paste the following line and then hit return/enter:
-```
-conda config --add channels conda-forge
-```
-
-## 4. Create a new Python environment
-[Additional documentation for creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
-1. To create an environment called **Atmo_EV333** for this course with a specific version of Python (here Python 3.11) and the packages you will need for this course, copy and paste the following line:
-```
-conda create --name Atmo_EV333 --file requirements.txt
-```
-This creates the Atmo_EV333 environment. 
-
-The following Python packages were installed: [NumPy](https://numpy.org/doc/stable/index.html), [Matplotlib](https://matplotlib.org), [Cartopy](https://scitools.org.uk/cartopy/docs/latest/), [SciPy](https://scipy.org), [cmocean](https://www.google.com/search?client=safari&rls=en&q=cmocean&ie=UTF-8&oe=UTF-8).
-
-
-## 5. Activate your Python environment
-In the terminal (Mac) or Command Prompt (Windows):
-```
-conda activate Atmo_EV333
-```
-
-To check which version of Python you have for this environment:
+*Note that the longitude conversion only needs to be done for sites in the western hemisphere.*
 
 ```
-python --version
-```
-You should have Python 3.11.
-
-
-To view your list of environments:
-```
-conda env list
-```
-Your system may look something similar to this. An `*` indicates the active environment:
-```
-# conda environments:
-#
-base                     /Users/alawman/miniconda3
-Atmo_EV333            *  /Users/alawman/miniconda3/envs/Atmo_EV333
+# select region of interest (set equal to a variable called ROI)
+# the code below subsets the data to the Niño 3.4 region 
+ROI = ds.where((ds.lon >= 190) &
+               (ds.lon <= 240) &
+               (ds.lat >= -5) &
+               (ds.lat <= 5), drop = True)
 ```
 
-## 6. Install additional Python packages
+**Example 2: Gulf of Mexico and Caribbean Sea**
 
-Install NetCDF4 by copying and pasting the following line in the terminal or Command Prompt:
+To modify the code for other regions, update the latitude and longitude values. Below is another example to subset a dataset to the Gulf of Mexico and Caribbean Sea [5° to 35°N, 65 to 100°W] as shown in Figure 1.
 ```
-pip install netCDF4==1.6.2
+# select region of interest (set equal to a variable called ROI)
+# the code below subsets the data to the Gulf of Mexico and Caribbean Sea
+ROI = ds.where((ds.lon >= -100+360) &
+               (ds.lon <= -65+360) &
+               (ds.lat >= 5) &
+               (ds.lat <= 35), drop = True)
 ```
-Reinstall dask by pasting the following line in the terminal:
-```
-conda install dask --force-reinstall
-```
-Check that all of the packages were successfully installed:
+<img width="223" height="238" alt="image" src="https://github.com/user-attachments/assets/9dcb5b4e-fabf-42bc-90bb-60acbdd0b5a1" />
+
+**Figure 1.** Mean sea surface temperature subset to the Gulf of Mexico and Caribbean Sea. The central longitude for the map is 82.5°W.
+
+## 2. How to calculate a regional time series
+
+We can take a mean over latitude and longitude to calculate a time series averaged over a region. This is a great way to visualize data because it will allow you to look at an atmospheric variable over time.
 
 ```
-conda list
+# calculate weights. For a rectangular grid the cosine of the latitude is proportional to the grid cell area. 
+weights = np.cos(np.deg2rad(ds.lat))
+
+# calculate a weighted mean by first applying the weights to the dataset
+ds_weighted = ds.weighted(weights)
+
+# then calculate a mean over the latitude and longitude dimensions
+# this will yield a time series.
+weighted_mean = ds_weighted.mean(("lon", "lat"))
+
+# display output
+weighted_mean
+```
+The `weighted_mean` variable can be plotted. 
+
+## 3. How to change the central longitude of a map
+
+Most maps we generated in class were centered on 180° in the Pacific. To change the central point of the map, update the central_longitude parameter when defining the map projection. Some examples are below:
+```
+# map projection (Pacific centered map)
+proj = ccrs.PlateCarree(central_longitude = 180)
+
+# map projection (Atlantic centered map)
+proj = ccrs.PlateCarree(central_longitude = 0)
+
+# map projection (map centered on 82.5°W as shown in Figure 1)
+proj = ccrs.PlateCarree(central_longitude = -82.5 + 360)
+
+# map projection (map centered on 45°E)
+proj = ccrs.PlateCarree(central_longitude = 45)
 ```
 
-## 7. Launch Jupyter Notebook and test your installation
-We will use [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/) for all lab assignments that involve coding. Jupyter Notebook is an open-source application that allows users to create interactive documents that can contain live code, equations, visualizations, and narrative text. Notebooks will contain blocks of text and executable Python code. Notebooks have the file extension `.ipynb`.
+## 4. How to change the axis extent for a regional map
 
-1. Download the Notebook `EV333_Test_Required_Packages.ipynb` from this GitHub repository and transfer it to your `EV333_AtmosphericScience` directory.
+If you’d like to plot a regional instead of global map, you can update the axes extent using the ax. set_extent() method. This should be done after you plot the data but before you save the figure. 
 
-2. Navigate to your `EV333_AtmosphericScience` directory from the command line. Then launch Jupyter Notebook by entering following in the terminal:
+In Figure 1 above the axes were set to [5° to 35°N, 65 to 100°W]. 
 ```
-jupyter notebook
+ax.set_extent([-100+360, -65+360, 5, 35], crs=ccrs.PlateCarree())
 ```
-This will launch a new tab in your browser. 
 
-3. Open the Notebook: `EV333_Test_Required_Packages.ipynb`
-4. Run the first cell by clicking the play button. This will check if NumPy, Xarray, Matplotlib, Cartopy SciPy, cmocean, and the NetCDF4 packages are successfully installed. If you receive an `N` for any package, double check that you installed the package in your Atmo_EV333 environment. A `Y` for everything means you're ready to go!
+A more generic example is shown below where you can update longitude1, longitude2, latitude1, and longitude2 to you values: 
+```
+ax.set_extent([longitude1, longitude2, latitude1, latitude2], crs=ccrs.PlateCarree())
+```
 
-## 8. Create a reference guide for launching Jupyter Notebook
-
-1. Write down the steps and commands you need to launch Jupyter Notebook (additional instructions will be provided in class).
-2. Shut down Jupyter Notebook
-3. Quit your terminal (Mac) or command prompt (Windows)
-4. Download the `EV333_Intro.ipynb` notebook into you `EV333_AtmosphericScience` directory.
-5. Launch the EV333_Intro using Jupyter Notebook using only your reference guide. Revise your instructions if needed.
-
-## 9. Begin practicting Python!
-Begin working through the EV333_Intro instructions to start gaining familiarity with Python and Jupyter Notebooks.
